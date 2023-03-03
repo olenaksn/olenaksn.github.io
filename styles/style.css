@@ -11,21 +11,21 @@ body {
 .bg-color{
     background-color: var(--background-color);
 }
-header{
+/* header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     padding: 0 20px;
-}
-.logo{
+} */
+/* .logo{
     padding: 15px 0 9px 0;
-}
-header nav{
+} */
+/* header nav{
     display: flex;
     gap: 35px;
-}
-.nav-item{
+} */
+/* .nav-item{
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -33,18 +33,21 @@ header nav{
     color: #3D3935;
     font-weight: 500;
     padding: 0 15px;
+} */
+.hover:hover{
+    color: var(--accent-color);
 }
 .nav-item:hover{
     color: var(--accent-color);
     transition-duration: 0.2s;
 }
-.nav-item span{
+/* .nav-item span{
     display: inline-block;
 }
 .nav-item span:hover{
     transform: rotate(-90deg);
     transition-duration: 0.5s;
-}
+} */
 .header-rightside{
     display: flex;
     align-items: center;
@@ -782,6 +785,82 @@ footer .item-button{
     border: 1px solid #B5B7C4;
     border-radius: 4px;
 }
+element {
+
+}
+.dropdown-item{
+    display: block;
+    width: 100%;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    clear: both;
+    font-weight: 400;
+    color: var(--bs-dropdown-link-color);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-radius: var(--bs-dropdown-item-border-radius,0);
+}
+.dropdown-item:active{
+    background-color: var(--accent-color);
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .5rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.dropdown-menu{
+    --bs-dropdown-padding-x: 0rem;
+    --bs-dropdown-padding-y: 0;
+    --bs-dropdown-spacer: 1.64rem;
+}
+a {
+
+    color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+    text-decoration: underline;
+
+}
+a {
+
+    color: #0d6efd;
+    text-decoration: underline;
+
+}
+*, ::after, ::before {
+
+    box-sizing: border-box;
+
+}
+*, ::after, ::before {
+
+    box-sizing: border-box;
+
+}
+.dropdown-menu{
+    --bs-dropdown-link-hover-color: white;
+    --bs-dropdown-link-hover-bg: var(--accent-color);
+    --bs-dropdown-border-color: none;
+    --bs-dropdown-border-radius: 0;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    border: none;
+    box-shadow: none;
+}
+.navbar-toggler{
+    border: none;
+}
 
 
 
@@ -795,18 +874,13 @@ footer .item-button{
 
 }
 @media(max-width:1200px){
-    .header-account .nav-item{
-        display: none
-    }
-    .header-account img{
-        display: none
-    }
+
     .header-line{
         display:none
     }
-    header nav{
+    /* header nav{
         display: none;
-    }
+    } */
     .header-rightside{
         gap: 15px;
     }
@@ -855,6 +929,16 @@ footer .item-button{
 
 
 @media(max-width:992px){
+    .navbar-brand{
+        margin-left: 0 !important;
+    }
+    .navbar-brand img{
+        scale: 0.6;
+        margin-left: -1.5em;
+    }
+    .dropdown-menu{
+        --bs-dropdown-spacer: -.5rem;
+    }
     .main-banner h1{
         font-size: 40px;
         padding-top: 300px;
@@ -897,6 +981,12 @@ footer .item-button{
 
 
 @media(max-width:768px){
+    .header-account{
+        display: none
+    }
+    /* .header-account img{
+        display: none
+    } */
     .main-banner h1{
         padding-top: 60px;
     }
@@ -929,6 +1019,15 @@ footer .item-button{
         grid-column:1/2;
         grid-row:1/2
     }
+    .adv-grid .adv-text-block h1{
+        font-size: 45px;
+        line-height: 51px;
+        padding-bottom: 20px;
+    }
+    .adv-grid .adv-text-block h3{
+        font-size: 18px;
+   
+    }
     .adv-upper-block{
         grid-column:1/2;
         grid-row: 2/3;
@@ -951,7 +1050,18 @@ footer .item-button{
     .page-title{
         padding: 20px 10px !important;
     }
-}
+    .subscribe-text h1{
+        font-size: 45px;
+        line-height: 51px;
+        padding-bottom: 10px;
+    }
+    .subscribe-text h3{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .subscribe-block{
+        padding: 60px 30px 80px 30px;
+    }
 
 
 @media(max-width:576px){
@@ -997,8 +1107,8 @@ footer .item-button{
         margin-bottom: 30px;
     }
     .footer-subscribe{
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
 }

@@ -4,45 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
     <title>HTML/CSS final work</title>
-  </head>
 </head>
 <body>
     <header>
-       <a class="logo" href="#"><img src="img/logo_header.svg" alt=""></a>
-       <nav>
-        <a class="nav-item" href="#">
-            Magazine
-            <span><img src="img/arrow_down.svg" alt=""></span>
-        </a>
-        <a class="nav-item" href="#">
-            Corsi
-            <span><img src="img/arrow_down.svg" alt=""></span>
-        </a>        
-        <a class="nav-item" href="#">
-            Fiere
-            <span><img src="img/arrow_down.svg" alt=""></span>
-        </a>        
-        <a class="nav-item" href="#">
-            Negozi
-            <span><img src="img/arrow_down.svg" alt=""></span>
-        </a>
-       </nav>
-       <div class="header-rightside">
-        <a class="search" href="#"></a>
-        <div class="header-line"></div>
-        <div class="header-account">
-            <a href="#"><img src="img/account_photo.png" alt="photo_account"></a>
-            <a class="nav-item" href="#">
-                Annachiara
-                <span class="nav_arrow"><img src="img/arrow_down.svg" alt=""></span>
-            </a>
-        </div>
-        <div class="menu-mobile">
-            <a href=""></a>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+              <a class="navbar-brand ms-5" href="#"><img src="img/logo_header.svg" alt=""></a>
+              
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown me-4">
+                    <a class="nav-link dropdown-toggle hover" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Magazine
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Mondi</a></li>
+                      <li><a class="dropdown-item" href="news.html">News</a></li>
+                      <li><a class="dropdown-item" href="#">Tutorial</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown me-4">
+                    <a class="nav-link dropdown-toggle hover" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Corsi
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Corsi nella tua città</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown me-4">
+                    <a class="nav-link dropdown-toggle hover" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Fiere
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Roma</a></li>
+                      <li><a class="dropdown-item" href="news.html">Vicenza</a></li>
+                      <li><a class="dropdown-item" href="#">Milano</a></li>
+                      <li><a class="dropdown-item" href="#">Visita in sicurezza</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown me-4">
+                    <a class="nav-link dropdown-toggle hover" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Negozi
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Negozi nella tua città</a></li>
+                      <li><a class="dropdown-item" href="news.html">Online</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+               <div class="header-rightside">
+                <a class="search" href="#"></a>
+                <div class="header-line"></div>
+                <div class="header-account">
+                     <a href="#"><img src="img/account_photo.png" alt="photo_account"></a>
+                    <a class="nav-link dropdown-toggle hover  me-5" href="#">
+                    Annachiara
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
        </div>
+    </nav>
     </header> 
     <section class="main-banner">
         <div class="container">
