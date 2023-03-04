@@ -115,7 +115,7 @@ h3 {
    }
 .slider-item:hover{
     transition-duration: 0.5s;
-    transform: translateX(-1em);
+    transform: translateX(-0.5em);
 }
 .slider-item img {
     border-top-left-radius: 2px;
