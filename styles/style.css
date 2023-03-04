@@ -323,7 +323,6 @@ h3 {
 .mondi img:hover{
     top: 68px;
     transition-duration: 0.5s;
-    filter: drop-shadow(2px 5px 6px rgba(0, 0, 0, 0.3));
 }
 .tutorial{
     padding: 76px 0 100px 0;
@@ -794,16 +793,12 @@ element {
     --bs-dropdown-spacer: 1.64rem;
 }
 a {
-
     color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
     text-decoration: underline;
-
 }
 a {
-
     color: #0d6efd;
     text-decoration: underline;
-
 }
 *, ::after, ::before {
 
